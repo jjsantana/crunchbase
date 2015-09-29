@@ -1,0 +1,225 @@
+Companies = 14785 
+Investors = 13563
+Employees = 39587
+ calculating poverk and poverm
+intersects = 38884 Inv 4417 Emp 6647 
+threshold, q, s 0.100000, 0.692099, 0.899504
+threshold, q, s 0.110000, 0.673308, 0.897548
+threshold, q, s 0.120000, 0.650668, 0.894689
+threshold, q, s 0.130000, 0.619199, 0.891229
+threshold, q, s 0.140000, 0.616029, 0.890627
+threshold, q, s 0.150000, 0.579126, 0.887769
+threshold, q, s 0.160000, 0.577089, 0.887318
+threshold, q, s 0.170000, 0.536337, 0.879795
+threshold, q, s 0.180000, 0.535658, 0.879645
+threshold, q, s 0.190000, 0.532262, 0.879043
+threshold, q, s 0.200000, 0.475209, 0.864450
+threshold, q, s 0.210000, 0.475209, 0.864450
+threshold, q, s 0.220000, 0.474757, 0.864450
+threshold, q, s 0.230000, 0.471587, 0.863096
+threshold, q, s 0.240000, 0.470229, 0.862795
+threshold, q, s 0.250000, 0.388273, 0.822777
+threshold, q, s 0.260000, 0.388273, 0.822777
+threshold, q, s 0.270000, 0.388273, 0.822777
+threshold, q, s 0.280000, 0.388046, 0.822476
+threshold, q, s 0.290000, 0.385556, 0.821122
+threshold, q, s 0.300000, 0.384877, 0.820521
+threshold, q, s 0.310000, 0.384877, 0.820521
+threshold, q, s 0.320000, 0.384650, 0.820521
+threshold, q, s 0.330000, 0.384650, 0.820521
+threshold, q, s 0.340000, 0.263754, 0.673988
+threshold, q, s 0.350000, 0.263527, 0.673988
+threshold, q, s 0.360000, 0.263301, 0.673988
+threshold, q, s 0.370000, 0.263301, 0.673988
+threshold, q, s 0.380000, 0.262622, 0.673386
+threshold, q, s 0.390000, 0.262622, 0.673236
+threshold, q, s 0.400000, 0.259226, 0.669625
+threshold, q, s 0.410000, 0.259226, 0.669625
+threshold, q, s 0.420000, 0.258773, 0.669325
+threshold, q, s 0.430000, 0.258773, 0.669325
+threshold, q, s 0.440000, 0.258773, 0.669325
+threshold, q, s 0.450000, 0.258773, 0.669174
+threshold, q, s 0.460000, 0.258773, 0.669174
+threshold, q, s 0.470000, 0.258773, 0.669024
+threshold, q, s 0.480000, 0.258773, 0.669024
+threshold, q, s 0.490000, 0.258773, 0.669024
+threshold, q, s 0.500000, 0.013357, 0.077779
+threshold, q, s 0.510000, 0.013357, 0.077779
+threshold, q, s 0.520000, 0.013357, 0.077779
+threshold, q, s 0.530000, 0.013357, 0.077779
+threshold, q, s 0.540000, 0.013357, 0.077629
+threshold, q, s 0.550000, 0.013357, 0.077629
+threshold, q, s 0.560000, 0.013357, 0.077629
+threshold, q, s 0.570000, 0.013357, 0.077629
+threshold, q, s 0.580000, 0.013357, 0.077328
+threshold, q, s 0.590000, 0.013357, 0.077178
+threshold, q, s 0.600000, 0.013131, 0.076275
+threshold, q, s 0.610000, 0.013131, 0.076275
+threshold, q, s 0.620000, 0.013131, 0.076275
+threshold, q, s 0.630000, 0.013131, 0.076125
+threshold, q, s 0.640000, 0.013131, 0.075824
+threshold, q, s 0.650000, 0.013131, 0.075824
+threshold, q, s 0.660000, 0.013131, 0.075824
+threshold, q, s 0.670000, 0.007698, 0.051301
+threshold, q, s 0.680000, 0.007698, 0.051301
+threshold, q, s 0.690000, 0.007698, 0.051301
+threshold, q, s 0.700000, 0.007698, 0.051151
+threshold, q, s 0.710000, 0.007698, 0.051151
+threshold, q, s 0.720000, 0.007698, 0.050850
+threshold, q, s 0.730000, 0.007698, 0.050850
+threshold, q, s 0.740000, 0.007698, 0.050850
+threshold, q, s 0.750000, 0.007698, 0.048593
+threshold, q, s 0.760000, 0.007698, 0.048593
+threshold, q, s 0.770000, 0.007698, 0.048593
+threshold, q, s 0.780000, 0.007698, 0.048593
+threshold, q, s 0.790000, 0.007698, 0.048593
+threshold, q, s 0.800000, 0.007471, 0.048292
+threshold, q, s 0.810000, 0.007471, 0.048292
+threshold, q, s 0.820000, 0.007471, 0.048292
+threshold, q, s 0.830000, 0.007471, 0.048292
+threshold, q, s 0.840000, 0.007471, 0.047540
+threshold, q, s 0.850000, 0.007471, 0.047540
+threshold, q, s 0.860000, 0.007471, 0.047390
+threshold, q, s 0.870000, 0.007471, 0.047390
+threshold, q, s 0.880000, 0.007471, 0.046938
+threshold, q, s 0.890000, 0.007471, 0.046788
+threshold, q, s 0.900000, 0.007471, 0.046788
+threshold, q, s 0.910000, 0.007471, 0.046788
+threshold, q, s 0.920000, 0.007471, 0.046788
+threshold, q, s 0.930000, 0.007471, 0.046788
+threshold, q, s 0.940000, 0.007471, 0.046788
+threshold, q, s 0.950000, 0.007471, 0.046788
+threshold, q, s 0.960000, 0.007471, 0.046788
+threshold, q, s 0.970000, 0.007471, 0.046788
+threshold, q, s 0.980000, 0.007471, 0.046788
+threshold, q, s 0.990000, 0.007471, 0.046788
+no. of employees with threshold 0.100000 investor follow 5979
+no. of employees with threshold 0.110000 investor follow 5966
+no. of employees with threshold 0.120000 investor follow 5947
+no. of employees with threshold 0.130000 investor follow 5924
+no. of employees with threshold 0.140000 investor follow 5920
+no. of employees with threshold 0.150000 investor follow 5901
+no. of employees with threshold 0.160000 investor follow 5898
+no. of employees with threshold 0.170000 investor follow 5848
+no. of employees with threshold 0.180000 investor follow 5847
+no. of employees with threshold 0.190000 investor follow 5843
+no. of employees with threshold 0.200000 investor follow 5746
+no. of employees with threshold 0.210000 investor follow 5746
+no. of employees with threshold 0.220000 investor follow 5746
+no. of employees with threshold 0.230000 investor follow 5737
+no. of employees with threshold 0.240000 investor follow 5735
+no. of employees with threshold 0.250000 investor follow 5469
+no. of employees with threshold 0.260000 investor follow 5469
+no. of employees with threshold 0.270000 investor follow 5469
+no. of employees with threshold 0.280000 investor follow 5467
+no. of employees with threshold 0.290000 investor follow 5458
+no. of employees with threshold 0.300000 investor follow 5454
+no. of employees with threshold 0.310000 investor follow 5454
+no. of employees with threshold 0.320000 investor follow 5454
+no. of employees with threshold 0.330000 investor follow 5454
+no. of employees with threshold 0.340000 investor follow 4480
+no. of employees with threshold 0.350000 investor follow 4480
+no. of employees with threshold 0.360000 investor follow 4480
+no. of employees with threshold 0.370000 investor follow 4480
+no. of employees with threshold 0.380000 investor follow 4476
+no. of employees with threshold 0.390000 investor follow 4475
+no. of employees with threshold 0.400000 investor follow 4451
+no. of employees with threshold 0.410000 investor follow 4451
+no. of employees with threshold 0.420000 investor follow 4449
+no. of employees with threshold 0.430000 investor follow 4449
+no. of employees with threshold 0.440000 investor follow 4449
+no. of employees with threshold 0.450000 investor follow 4448
+no. of employees with threshold 0.460000 investor follow 4448
+no. of employees with threshold 0.470000 investor follow 4447
+no. of employees with threshold 0.480000 investor follow 4447
+no. of employees with threshold 0.490000 investor follow 4447
+no. of employees with threshold 0.500000 investor follow 517
+no. of employees with threshold 0.510000 investor follow 517
+no. of employees with threshold 0.520000 investor follow 517
+no. of employees with threshold 0.530000 investor follow 517
+no. of employees with threshold 0.540000 investor follow 516
+no. of employees with threshold 0.550000 investor follow 516
+no. of employees with threshold 0.560000 investor follow 516
+no. of employees with threshold 0.570000 investor follow 516
+no. of employees with threshold 0.580000 investor follow 514
+no. of employees with threshold 0.590000 investor follow 513
+no. of employees with threshold 0.600000 investor follow 507
+no. of employees with threshold 0.610000 investor follow 507
+no. of employees with threshold 0.620000 investor follow 507
+no. of employees with threshold 0.630000 investor follow 506
+no. of employees with threshold 0.640000 investor follow 504
+no. of employees with threshold 0.650000 investor follow 504
+no. of employees with threshold 0.660000 investor follow 504
+no. of employees with threshold 0.670000 investor follow 341
+no. of employees with threshold 0.680000 investor follow 341
+no. of employees with threshold 0.690000 investor follow 341
+no. of employees with threshold 0.700000 investor follow 340
+no. of employees with threshold 0.710000 investor follow 340
+no. of employees with threshold 0.720000 investor follow 338
+no. of employees with threshold 0.730000 investor follow 338
+no. of employees with threshold 0.740000 investor follow 338
+no. of employees with threshold 0.750000 investor follow 323
+no. of employees with threshold 0.760000 investor follow 323
+no. of employees with threshold 0.770000 investor follow 323
+no. of employees with threshold 0.780000 investor follow 323
+no. of employees with threshold 0.790000 investor follow 323
+no. of employees with threshold 0.800000 investor follow 321
+no. of employees with threshold 0.810000 investor follow 321
+no. of employees with threshold 0.820000 investor follow 321
+no. of employees with threshold 0.830000 investor follow 321
+no. of employees with threshold 0.840000 investor follow 316
+no. of employees with threshold 0.850000 investor follow 316
+no. of employees with threshold 0.860000 investor follow 315
+no. of employees with threshold 0.870000 investor follow 315
+no. of employees with threshold 0.880000 investor follow 312
+no. of employees with threshold 0.890000 investor follow 311
+no. of employees with threshold 0.900000 investor follow 311
+no. of employees with threshold 0.910000 investor follow 311
+no. of employees with threshold 0.920000 investor follow 311
+no. of employees with threshold 0.930000 investor follow 311
+no. of employees with threshold 0.940000 investor follow 311
+no. of employees with threshold 0.950000 investor follow 311
+no. of employees with threshold 0.960000 investor follow 311
+no. of employees with threshold 0.970000 investor follow 311
+no. of employees with threshold 0.980000 investor follow 311
+no. of employees with threshold 0.990000 investor follow 311
+Follow 100 131080 /person/scott-webber 
+Follow 100 132061 /person/radu-georgescu 
+Follow 100 133282 /person/jonathan-ehrlich 
+Follow 100 100536 /person/alex-edelstein 
+Follow 100 100774 /person/tohru-hashimoto 
+Follow 100 135198 /person/ryan-eberhard 
+Follow 100 102858 /person/chris-voigt 
+Follow 100 102886 /person/bob-moul 
+Follow 100 102951 /person/christopher-fuchs-2 
+Follow 100 102952 /person/stewart-masters 
+Follow 100 135722 /person/cory-sistrunk 
+Follow 100 103988 /person/sean-schickedanz 
+Follow 100 104319 /person/denis-buryakovskyy 
+Follow 100 104321 /person/vasiliy-iakymchuk 
+Follow 100 105632 /person/dick-brandewie 
+Follow 100 106086 /person/michael-jansen 
+Follow 100 107277 /person/alexandr-vashchenko 
+Follow 100 107716 /person/mauricio-poos 
+Follow 100 108285 /person/quynh-pham 
+Follow 100 109075 /person/mike-darnell 
+Follow 100 109076 /person/jp-dumas 
+Follow 100 112527 /person/jd-chang 
+Follow 100 113224 /person/eduardo-rodrigues 
+Follow 100 113296 /person/peter-allerstorfer 
+Follow 100 113298 /person/manuel-koser 
+Follow 100 114675 /person/manuel-grenacher 
+Follow 100 115550 /person/sam-enrico-williams 
+Follow 100 115551 /person/steve-nico-williams 
+Follow 100 115848 /person/kamal-reggad 
+Follow 100 116158 /person/brent-brown 
+Follow 100 116288 /person/matt-britton 
+Follow 100 118308 /person/steven-gerber 
+Follow 100 122103 /person/jonathan-benhamou 
+Follow 100 122409 /person/wayne-sutton 
+Follow 100 122815 /person/craig-baker 
+Follow 100 122816 /person/john-jensen 
+Follow 100 122817 /person/francis-steiner 
+Follow 100 122929 /person/jorge-daz 
+Follow 100 129328 /person/marco-janeczek 
+Employees with 100 follows 39
