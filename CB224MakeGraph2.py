@@ -7,7 +7,7 @@ from datetime import datetime as dt
 
 companyEmployees = open('company-employee-date.txt', 'r')
 companyInvestors = open('company-investor-date.txt', 'r')
-# empEdges = open('CB224/company-emp-graph11.txt', 'w+')
+# empEdges = open('CB224/company-emp-graph11.txt', 'w+') 
 # invEdges = open('CB224/company-inv-graph11.txt', 'w+')
 # allEdges = open('allEdges.txt', 'w+')
 # nodeIDs = open('CB224/nodeIDs11.txt', 'w+')
@@ -39,10 +39,12 @@ def addInvestorNode(investorName, overlap, investorNodeID):
 		intDict[investorNodeID] = investorName
 		investors.add(investorName)
 		investorNodeID += 1
+	# if we've seen this person before as an employee, make sure
+	# to add a second ID as an investor
 	elif investorName in employees and investorName not in investors:
 		overlap += 1
 		idList = list()
-		idList.append(nodeDict[investorName]) #get their odl value and make it into a list
+		idList.append(nodeDict[investorName]) #get their old value and make it into a list
 		idList.append(investorNodeID) #append the new value
 		nodeDict[investorName] = idList
 		intDict[investorNodeID] = investorName
@@ -88,6 +90,8 @@ def addEEdge(companyName, employeeName, date):
 	# empEdges.write("{}\t{}\t{}\n".format(cId, eId, dateDict[(cId, eId)]))
 	# allEdges.write("{}\t{}\t{}\n".format(cId, eId, dateDict[(cId, eId)]))
 
+
+#Assigning the numbered id's to the companies, employees, and investors
 companyNodeID = 0
 employeeNodeID = 100000
 investorNodeID = 200000
@@ -105,6 +109,7 @@ investors = set()
 companies = set()
 compEmp = companyEmployees.readline()
 while(compEmp != ''):
+	#nsd = [name of company, name of employee, date]
 	nsd = compEmp.split('\t')
 	companyNodeID = addCompanyNode(nsd[0], companyNodeID)
 	employeeNodeID = addEmployeeNode(nsd[1], employeeNodeID)
@@ -127,10 +132,13 @@ count = 0
 newCompanies = 0
 compInv = companyInvestors.readline()
 while(compInv != ''):
+	#nsd = [name of company, name of investor, date]
 	nsd = compInv.split('\t')
 	if not nodeDict[nsd[0]]:
 		compInv = companyInvestors.readline()
 		continue
+	# passing in overlap because trying to count how many employees we have who are
+	# also investors
 	overlap, investorNodeID = addInvestorNode(nsd[1], overlap, investorNodeID)
 	addIEdge(nsd[0], nsd[1], nsd[2])
 	#print "{}\t{}\t{}\n".format(nodeDict[nsd[0]], nodeDict[nsd[1]], invDateDict[(nsd[0],nsd[1])])
@@ -171,6 +179,9 @@ invGraph = snap.LoadEdgeList(snap.PUNGraph, "CB224/company-inv-graph11.txt", 1, 
 printEdgesNodes(graph)
 printEdgesNodes(empGraph)
 printEdgesNodes(invGraph)
+
+
+# method to investigate the average degree in the given graph
 def printDegrees(Graph):
   avg = 0
   degMap = dict()
@@ -189,6 +200,7 @@ def printDegrees(Graph):
   print (avg*1.0)/(total*1.0)
   print total
 
+print "employee:"
 printDegrees(empGraph)
 print "investor:"
 printDegrees(invGraph)
