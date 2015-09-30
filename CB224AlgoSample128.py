@@ -6,6 +6,8 @@ import pickle
 import matplotlib.pyplot as plt
 import pylab as P
 
+# TODO: Provide descriptions of each function below and remove unnecessary (commented out) code
+
 def dd():
 	return False
 

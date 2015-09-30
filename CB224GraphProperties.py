@@ -2,6 +2,8 @@ import snap
 import matplotlib.pyplot as plt
 import pickle
 
+# TODO: Where is this function being called?
+# What exactly does this function do?
 def plotGraph(input) :
 
 	x = [i.GetVal1() for i in input]
@@ -15,11 +17,12 @@ def plotGraph(input) :
 	
 
 
-#edges for two different graphs
+# The following creates network graphs for the employment, investment, and all relations
 companyEmployeeGraph = snap.LoadEdgeList(snap.PNEANet, "CB224/company-emp-graph11.txt", 1, 0)
 companyInvestorGraph = snap.LoadEdgeList(snap.PNEANet, "CB224/company-inv-graph11.txt", 1, 0)
 graph = snap.LoadEdgeList(snap.PNEANet, "allEdges.txt", 1, 0)
 
+# TODO: Do we need this commented out code?
 #dates for different edges, in format (pair of nodes) as key, (list of dates for pair) as value
 #since we can have multiple dates for the same edge, value is list of dates
 # invDatesDict = pickle.load(open("invDateDict5.p", "rb"))
@@ -60,6 +63,7 @@ graph = snap.LoadEdgeList(snap.PNEANet, "allEdges.txt", 1, 0)
 
 # plotGraph(CompanyEmpDegCntV)
 
+# The following prints out the summary network statistics for the investor, employee, and entire graph
 snap.PrintInfo(companyInvestorGraph, "Company Investor Graph", "CIStats.txt", False)
 
 snap.PrintInfo(companyEmployeeGraph, "Company Employee Graph", "CEStats.txt", False)
