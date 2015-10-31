@@ -8,9 +8,9 @@ import pylab as P
 
 # TODO: Provide descriptions of each function below and remove unnecessary (commented out) code
 
-def dd():
-	return False
-
+# methods for calculating and graphing distribution of "stars", that is, employers
+# whose investors follow them 100%
+# used to generate Figure 7
 def plotStarDist(text, xlabel, ylabel, data) :
 	x = [data[key] for key in data]
 	n, bins, patches = P.hist(x, 10, normed=0, histtype='stepfilled')
@@ -33,6 +33,8 @@ def calcStarDist(threshold, pover):
 				starFollows[x] = len(pover[x])
 	return starFollows
 
+# Graphing specified data and y-axis name against x-axis with name "Threshold"
+# used to generate Figure 6A and 6B
 def plotDistEmpInvMatches(text, data, yaxis, name):
 	fig = plt.figure()
 	x = sorted([key for key  in data])
@@ -42,7 +44,20 @@ def plotDistEmpInvMatches(text, data, yaxis, name):
 	plt.ylabel(yaxis)
 	plt.plot(x,y, 'go')
 	plt.savefig(name)
+# same as above, but in log scale
+def plotDistEmpInvMatcheslog(text, data, yaxis, name):
+        fig = plt.figure()
+        x = [key for key  in data]
+        y = [data[k] for k in data]
+        plt.title(text)
+        plt.xlabel('Threshold')
+        plt.ylabel(yaxis)
+        plt.loglog(x,y, 'ro', basex=10, basey=10)
+        plt.savefig(name)
+        # plt.show()
 
+# Used in early stage of research, for milestone report (confirmed
+#	that the degrees of nodes in both graphs follow power laws)
 def MLEApprox(data):
 	bigHonkingTerm = 0
 	xmin = .11
@@ -51,6 +66,8 @@ def MLEApprox(data):
 	bigHonkingTerm = 1 + (len(data.values()))/bigHonkingTerm
 	print bigHonkingTerm
 
+# data maniuplation to prepare graph statistics for plotting
+# used to generate Figure 4
 def getYs(m):
 	ys = list()
 	sortedKeys = sorted(m.keys())
@@ -59,6 +76,10 @@ def getYs(m):
 		print k,m[k]
 	return ys
 
+# plot final result statistics, on whole graph (with statistics
+# using whole graph numbers instead of later limit to just those
+# with some nonzero behavior of following-- see p6 of final report)
+# used to generate Figure 4
 def plotWholeGraphStats(title, yaxis, qw, sw, name):
 	fig = plt.figure()
 	x = sorted([key for key in qw])
@@ -73,6 +94,9 @@ def plotWholeGraphStats(title, yaxis, qw, sw, name):
 	plt.savefig(name)
 	# plt.show()
 
+# plot final result statistics calculated using only
+# nodes that displayed some non-zero following behavior
+# used to generate Figure 4
 def plotReducedGraphStats(title, yaxis, q, s, qj, sj, name):
 	fig = plt.figure()
 	x = sorted([key for key in q])
@@ -91,19 +115,6 @@ def plotReducedGraphStats(title, yaxis, q, s, qj, sj, name):
 	plt.savefig(name)
 	# plt.show()
 
-
-def plotDistEmpInvMatcheslog(text, data, yaxis, name):
-        fig = plt.figure()
-        x = [key for key  in data]
-        y = [data[k] for k in data]
-        plt.title(text)
-        plt.xlabel('Threshold')
-        plt.ylabel(yaxis)
-        plt.loglog(x,y, 'ro', basex=10, basey=10)
-        plt.savefig(name)
-        # plt.show()
-
-
 def plotDistMatches(text, xlabel, ylabel, data, name):
         fig = plt.figure()
         x = []
@@ -118,6 +129,7 @@ def plotDistMatches(text, xlabel, ylabel, data, name):
         plt.savefig(name)
         # P.show()
 
+# used to generate Figure 5
 def plotDist(text, xlabel, ylabel,data, name):
         fig = plt.figure()
         x = []
